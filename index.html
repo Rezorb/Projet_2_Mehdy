@@ -10,16 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="main-container">
         <header>
-            <nav>
+            <nav class="nav-links">
                 <div class="logo">
-                    <img src="images/logo/Booki.png" alt="Logo Booki" />
+                    <img src="images/logo/Booki.png" alt="Logo Booki">
                 </div>
                 <div class="menu">
                     <ul>
@@ -39,28 +39,38 @@
                     <form action="" method="post">
                         <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
                         <input type="search" placeholder="Marseille, France">
-                        <input type="submit" value="Rechercher">
+                        <div class="switch">
+                            <input type="submit" value="Rechercher">
+                            <button class="fa-sharp fa-solid fa-magnifying-glass" style="color: #ffffff;">
+                            </button>
+                        </div>
                     </form>
                 </div>
                 <div class="filters">
                     <div>
                         <h2>Filtres</h2>
                     </div>
-                    <div class="filters-config">
-                        <i class="fa-solid fa-money-bill-wave" style="color: #0065fc;"></i>
-                        <div class="filters-txt">Economique</div>
-                    </div>
-                    <div class="filters-config">
-                        <i class="fa-solid fa-person" style="color: #0065fc;"></i>
-                        <div class="filters-txt">Familial</div>
-                    </div>
-                    <div class="filters-config">
-                        <i class="fa-solid fa-heart" style="color: #0065fc;"></i>
-                        <div class="filters-txt">Romantique</div>
-                    </div>
-                    <div class="filters-config">
-                        <i class="fa-solid fa-fire" style="color: #0065fc;"></i>
-                        <div class="filters-txt">Nos pépites</div>
+                    <div class="filters-choice">
+                        <div class="filters-bloc-1">
+                            <div class="filters-config">
+                                <i class="fa-solid fa-money-bill-wave" style="color: #0065fc;"></i>
+                                <div class="filters-txt">Economique</div>
+                            </div>
+                            <div class="filters-config">
+                                <i class="fa-solid fa-person" style="color: #0065fc;"></i>
+                                <div class="filters-txt">Familial</div>
+                            </div>
+                        </div>
+                        <div class="filters-bloc-2">
+                            <div class="filters-config">
+                                <i class="fa-solid fa-heart" style="color: #0065fc;"></i>
+                                <div class="filters-txt">Romantique</div>
+                            </div>
+                            <div class="filters-config">
+                                <i class="fa-solid fa-fire" style="color: #0065fc;"></i>
+                                <div class="filters-txt">Nos pépites</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="info">
@@ -279,20 +289,25 @@
                             <div class="card-txt">
                                 <h3 class="card-title">Vieux-port</h3>
                             </div>
+                        </div>
                     </article>
                     <article class="card">
-                        <img src="./images/activites/paul-hermann.jpg" alt="Image montrant un fort au milieu de rochers">
+                        <img src="./images/activites/paul-hermann.jpg"
+                            alt="Image montrant un fort au milieu de rochers">
                         <div class="card-content">
                             <div class="card-txt">
                                 <h3 class="card-title">Fort de Pomègues</h3>
                             </div>
+                        </div>
                     </article>
                     <article class="card">
-                        <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image montrant des rochers au bord de l'eau">
+                        <img src="./images/activites/kilyan-sockalingum.jpg"
+                            alt="Image montrant des rochers au bord de l'eau">
                         <div class="card-content">
                             <div class="card-txt">
                                 <h3 class="card-title">Parc national des Calanques</h3>
                             </div>
+                        </div>
                     </article>
                     <article class="card">
                         <img src="./images/activites/florian-wehde.jpg" alt="Image montrant une ville">
@@ -300,6 +315,7 @@
                             <div class="card-txt">
                                 <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                             </div>
+                        </div>
                     </article>
 
                 </div>
@@ -313,7 +329,7 @@
         <footer>
             <div class="contenu-footer">
                 <div class="footer-apropos">
-                    <h2>A propos</h2>
+                    <h2>À propos</h2>
                     <ul class="liste-apropos">
                         <li><a href="#">Fonctionnement du site</a></li>
                         <li><a href="#">Conditions générales</a></li>
