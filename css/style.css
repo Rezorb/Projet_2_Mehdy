@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 :root {
@@ -23,9 +25,7 @@
 /******* Nav ***********/
 
 .nav-links {
-    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -45,7 +45,6 @@
 
 .menu {
     width: 30%;
-    padding: 0 25px 0 25px
 }
 
 .menu ul {
@@ -53,17 +52,16 @@
     justify-content: space-around;
 }
 
-.menu li {
-    list-style-type: none;
+.menu ul li a {
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu a {
     font-size: 16px;
-    text-decoration: none;
     color: black;
     cursor: pointer;
     padding-top: 1em;
-
 }
 
 .menu a:hover {
@@ -131,8 +129,9 @@ body {
 form {
     display: flex;
     flex-direction: row;
-    margin: auto;
-    width: 100%;
+    justify-content: flex-start;
+    width: 377px;
+    height: 49px;
     margin-top: 20px;
     align-items: center;
 }
@@ -150,9 +149,7 @@ form {
     
 }
 
-input {
-    padding: 10px;
-}
+
 
 .formulaire input[type="search"] {
     display: flex;
@@ -167,6 +164,7 @@ input {
     border-bottom: 1px solid #F2F2F2;
     border-left: none;
     border-right: none;
+    padding: 10px 0 10px 20px;
 }
 
 .formulaire input[type="submit"] {
@@ -201,7 +199,7 @@ input {
     display: flex;
     align-items: center;
     padding-top: 30px;
-    gap: 10px;
+    gap: 15px;
 }
 
 .filters h2 {
@@ -211,20 +209,21 @@ input {
 .filters-bloc-1 {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
 
 }
 
 .filters-bloc-2 {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
 }
 
 .filters-choice {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    align-items: center;
+    gap: 15px;
+    height: 50px;
 }
 
 .filters-config {
@@ -234,8 +233,14 @@ input {
     border-radius: 25px;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    
 }
+
+.filters-config i {
+    font-size: 18px;
+}
+
 
 .filters-config:hover {
     background-color: #DEEBFF;
@@ -244,6 +249,7 @@ input {
 .filters-txt {
     padding-left: 10px;
     font-weight: bold;
+    font-size: 17px;
 }
 
 /****** Infos **************/
@@ -274,7 +280,7 @@ input {
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
+    
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -283,6 +289,7 @@ input {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    background-color: var(--main-bg-color);
 }
 
 .hebergements-title {
@@ -358,7 +365,7 @@ input {
 
 .afficher-plus h2 {
     font-size: 18px;
-    padding-top: 20px;
+    padding-top: 15px;
     margin-bottom: 0px;
 }
 
@@ -370,6 +377,7 @@ input {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    background-color: var(--main-bg-color);
 }
 
 .populaires-title {
@@ -416,15 +424,14 @@ input {
 /******* Activités **********/
 
 .activites {
-
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 .activites-cards {
     display: flex;
-    padding: 30px 0 0 30px;
-    gap: 20px;
-    max-width: 100%;
+    padding: 30px 30px 30px 30px;
+    gap: 30px;
+
 }
 
 .activites-cards .card {
@@ -466,6 +473,7 @@ footer {
     height: 163px;
     background-color: #F2F2F2;
     width: 100%;
+    margin-top: 30px;
    
 }
 
@@ -572,12 +580,14 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-top: 30px;
+       
     }
     .filters {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        padding-top: 20px;
+        gap: 0;
     }
 
     .filters-choice {
@@ -617,6 +627,7 @@ footer {
         font-size: 13px;
     }
 
+
     .activites-cards img{
         height: 200px;
         width: 100%;
@@ -628,6 +639,16 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
 
+    .body {
+        margin: 0 ;
+        padding: 0;
+    }
+
+    .main-container {
+        padding: 0;
+        margin: 0;
+    }
+
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -635,7 +656,7 @@ footer {
     }
 
     .logo {
-        padding: 20px 0;
+        padding: 20px 0 0 0;
         display: flex;
         justify-content: center;
         width: 100%;
@@ -643,7 +664,7 @@ footer {
 
     .menu {
         width: 100%;
-        padding: 10px 0;
+        padding: 10px 0 15px 0;
         display: flex;
         text-align: center;
         margin: auto;
@@ -666,11 +687,15 @@ footer {
         border-top-style: none;
     }
 
+    .recherche {
+        margin-top: 0;
+        padding: 0 20px;
+    }
 
     .filters-choice {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    
     }
 
     .filters-bloc-1 {
@@ -700,7 +725,7 @@ footer {
         display: none;
     }
     
-    .formulaire button  {
+    .formulaire button {
         background-color: #0065FC;
         height: 49px;
         width: 49px;
@@ -708,13 +733,30 @@ footer {
         padding: 15px 15px 16px 15px;
         border: none;
         display: flex;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        font-size: 16px;
     }
 
+    .info {
+        padding: 80px 0 0 0;
+    }
 
+   .hebergements-and-populaires section {
+        padding: 10px;
+        
+        border-radius: 0;
+   }
 
+    .hebergements {
+        order: 2;
+        background-color: transparent;
+        padding: 10px;
+       
+    }
 
     .hebergements-cards .card {
-        width: 100%;
+        width: 98%;
+        margin-top: 15px;
     }
 
     .hebergements-cards .bloc1 {
@@ -729,6 +771,20 @@ footer {
         justify-content: space-between;
     }
 
+    .hebergements-cards .card-rating i {
+        font-size: 15px;
+    }
+
+    .afficher-plus h2 {
+        padding-top: 0;
+    }
+
+    .populaires {
+        order: 1;
+        margin-top: 10px;
+        
+    }
+
     .populaires-cards {
         display: flex;
         flex-direction: column;
@@ -736,19 +792,32 @@ footer {
     }
 
     .populaires-cards .card {
-        width: 100%;
+        width: 97%;
+        margin-top: 15px;
     }
 
+    .activites {
+        padding: 20px;
+    }
+
+    .activites-title h1 {
+       margin: 60px 0 20px 0;
+    }
 
     .activites-cards {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 0px;
+    }
+
+    .activites-cards .card {
+        margin-top: 0;
     }
 
     footer {
         height: 461px;
-        padding-left: 0;
+        padding-left: 0px;
         
     }
 
