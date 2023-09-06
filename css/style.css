@@ -32,7 +32,6 @@ main {
 /******** Logo ************/
 
 .logo {
-    width: 161.09px;
     padding: 30px 50px 30px 0;
 }
 
@@ -121,10 +120,6 @@ body {
     font-size: 16px;
 }
 
-.euro {
-    font-weight: 700;
-}
-
 .neutralStar {
     color: var(--main-bg-color)
 }
@@ -151,11 +146,6 @@ body {
 
 /****** Formulaire ************/
 
-.formulaire {
-    display: flex;
-    
-}
-
 form {
     display: flex;
 }
@@ -167,7 +157,6 @@ form {
     background-color: #F2F2F2;
     border: 1px;
     width: 50px;
-    height: 49px;
     justify-content: center;
     align-items: center;
     
@@ -202,8 +191,6 @@ form {
 
 .formulaire button  {
     background-color: #0065FC;
-    height: 49px;
-    width: 49px;
     border-radius: 15px;
     padding: 15px 15px 16px 15px;
     border: none;
@@ -232,7 +219,6 @@ form {
     display: flex;
     flex-direction: row;
     gap: 15px;
-
 }
 
 .filters-bloc-2 {
@@ -245,7 +231,6 @@ form {
     display: flex;
     align-items: center;
     gap: 15px;
-
 }
 
 .filters-config {
@@ -273,6 +258,7 @@ form {
     font-size: 17px;
 }
 
+
 /****** Infos **************/
 
 .info {
@@ -293,7 +279,6 @@ form {
 }
 
 
-
 /****** Hebergements And Populaires ***********/
 
 .hebergements-and-populaires {
@@ -311,6 +296,7 @@ form {
     flex-direction: column;
 }
 
+
 /****** Hebergements ***********/
 
 .hebergements {
@@ -323,6 +309,10 @@ form {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-around;
+}
+
+.hebergements-cards .cursor {
+    color: black;
 }
 
 .hebergements-cards article {
@@ -352,7 +342,6 @@ form {
     height: 110px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    
 }
 
 .hebergements-cards .card-content {
@@ -420,6 +409,12 @@ form {
     display: flex;
 }
 
+.populaires-cards .cursor {
+    display: flex;
+    color: black;
+    width: 100%;
+}
+
 .populaires-cards img {
     width: 33%;
     height: 136px;
@@ -460,7 +455,6 @@ form {
 }
 
 
-
 /******* Activités **********/
 
 .activites {
@@ -473,7 +467,6 @@ form {
 .activites-cards {
     display: flex;
     gap: 30px;
-
 }
 
 .activites-cards .card {
@@ -484,6 +477,9 @@ form {
     padding: 0;
 }
 
+.activites-cards .cursor {
+    color: black;
+}
 
 .activites-cards img{
     height: 380px;
@@ -496,7 +492,6 @@ form {
     display: flex;
     justify-content: flex-start;
     padding: 5px 19px 5px 19px;
-    
 }
 
 .activites-title h1 {
@@ -506,13 +501,11 @@ form {
 }
 
 
-
 /******* Footer ********/
 
 footer {
     background-color: #F2F2F2;
     width: 100%;
-
 }
 
 .contenu-footer {
@@ -602,9 +595,9 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-       
     }
 
+    
     /****** Filters ************/
 
     .filters {
@@ -678,7 +671,6 @@ footer {
     }
 
 
-
     /****** Activites ************/
 
     .activites-cards {
@@ -712,8 +704,6 @@ footer {
     .activites-cards .card:nth-child(4) .card-title {
         margin: 10px 0;
     }
-
-
 }
 
 
@@ -731,7 +721,6 @@ footer {
         padding: 0px;
         width: 100%;
         gap: 30px;
-        
     }
 
 
@@ -779,7 +768,6 @@ footer {
     .menu a {
         padding-bottom: 1em;
         padding-top: 0;
-    
     }
 
     .menu a:hover {
@@ -802,7 +790,6 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
-    
     }
 
     .filters-bloc-1 {
@@ -823,7 +810,6 @@ footer {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-    
     }
 
     .filters-config i {
@@ -833,6 +819,7 @@ footer {
     .filters-txt {
         font-size: 14px;
     }
+
 
     /****** Formulaire ************/
 
@@ -848,7 +835,6 @@ footer {
     .formulaire input[type="search"] {
         width: 100%;
         height: 49px;
-
     }
 
     .formulaire button {
@@ -886,7 +872,6 @@ footer {
         order: 2;
         background-color: transparent;
         padding: 10px;
-       
     }
 
     .hebergements-cards {
@@ -936,7 +921,6 @@ footer {
 
     .populaires {
         order: 1;
-
     }
 
     .hebergements-and-populaires .populaires {
@@ -990,7 +974,6 @@ footer {
     .activites-cards .card-title {
         margin: 0;
     }
-
 
 
     /****** Footer ************/
@@ -1051,10 +1034,4 @@ footer {
         padding-left: 0;
         padding-bottom: 0px;
     }
-
-
-
-
-
-
 }
